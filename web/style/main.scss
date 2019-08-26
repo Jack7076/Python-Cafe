@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    height: 100vh;
+    .sidebar {
+        width: 100%;
+        height: 100%;
+        background-color: #f39c12;
+        grid-column: 1 / 2;
+
+        .brand {
+            color: #ecf0f1;
+            font-size: 200%;
+            font-weight: 700;
+            width: 100%;
+            text-align: center;
+            padding-top: 15px;
+        }
+    }
+    .main {
+        background-color: #d35400;
+        width: 100%;
+        height: 100%;
+        grid-column: 2 / 5;
+    }
+}
