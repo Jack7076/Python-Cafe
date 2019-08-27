@@ -46,6 +46,9 @@ class request():
 
     def responseData(self):
         reload(prozelLang)
+        print("[RESP] Request Type: {}".format(self.method))
+        if self.method == "POST":
+            return bytes("POST REQUESTS NOT ALLOWED!", 'utf-8')
         if self.uri[0] == "/":
             self.uri[0] = "/index.html"
         try:
